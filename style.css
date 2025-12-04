@@ -1,0 +1,959 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --primary-font: "Ubuntu", sans-serif;
+  --secondary-font: "Noto Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 85vw;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.navbar > a {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: var(--primary-font);
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links > a {
+  color: grey;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+  font-family: var(--secondary-font);
+}
+
+.nav-links > a:hover {
+  color: #6e06f2;
+}
+
+.navbar > a > img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.hero-section > .second-hero > img {
+  width: 500px;
+  border-radius: 50%;
+  border: 1px dotted #6e06f2;
+  padding: 40px;
+}
+
+.first-hero > span {
+  color: #787878;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+.first-hero > h1 > span {
+  color: #6e06f2;
+}
+
+.first-hero > h1 {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: var(--primary-font);
+}
+
+.first-hero > p {
+  color: #9096a4;
+  width: 520px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  font-family: var(--secondary-font);
+}
+
+.btn {
+  padding: 10px 15px;
+  color: white;
+  background-color: #24262f;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  box-shadow: 1px 1px 2px 1px rgba(128, 128, 128, 0.705);
+}
+
+.btn:hover {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 0px;
+}
+
+.btn2 {
+  background-color: #ebebeb;
+  color: black;
+  margin-left: 10px;
+}
+
+.scroll-sign {
+  position: relative;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-sign > span {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #6e06f2;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 6px;
+  animation: scroll 1.1s infinite ease-in-out;
+}
+
+@keyframes scroll {
+  0% {
+    margin-top: 0;
+  }
+
+  50% {
+    margin-top: 100px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+.skills-section {
+  margin-top: 50px;
+}
+
+.heading3 {
+  font-size: 55px;
+  font-family: var(--primary-font);
+  margin-top: 20px;
+  margin-bottom: 45px;
+  text-decoration: underline;
+  position: relative;
+}
+
+.skill-circle {
+  position: absolute;
+  top: 39px;
+  left: 142px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #6e06f2;
+}
+
+.experience-section > .heading3 > .skill-circle {
+  left: 295px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.skills > div > h3 {
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.skills > div > p {
+  margin-bottom: 3px;
+  font-family: var(--secondary-font);
+  color: #9096a4;
+}
+
+.experience-section {
+  margin-bottom: 50px;
+}
+
+.experience-section > div {
+  padding-left: 250px;
+  margin-bottom: 20px;
+}
+
+.experience-section > div > h3 > i {
+  padding-right: 10px;
+  color: grey;
+}
+
+.experience-section > div > h3 {
+  font-size: 22px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+}
+
+.experience-section > div > h5 {
+  padding-left: 35px;
+  font-size: 14px;
+  font-family: var(--secondary-font);
+  color: #9096a4;
+}
+
+.wrapper44 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.project-section > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  border: 2px dotted #6e06f2;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.project-section > div:hover {
+  scale: 1.1;
+}
+
+.project-section > div > h4 {
+  position: relative;
+  font-size: 25px;
+  font-family: var(--primary-font);
+}
+
+.project-section > div > h4 > span {
+  position: absolute;
+  top: 36px;
+  left: 13px;
+  width: 87px;
+  height: 2px;
+  background: #6e06f2;
+}
+
+.project-section div img {
+  width: 350px;
+  height: 150px;
+}
+
+.project-section > div > p {
+  font-family: var(--secondary-font);
+  color: #697681;
+}
+
+.project-section {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  row-gap: 30px;
+  column-gap: 40px;
+  justify-content: center;
+}
+
+.wrapper44 > .heading3 > .skill-circle {
+  left: 219px;
+}
+
+.wrapper4 {
+  height: 50vh;
+  background-color: #131f22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h4 {
+  font-size: 65px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer p {
+  color: #697681;
+  padding-bottom: 20px;
+  width: 400px;
+  font-family: var(--secondary-font);
+}
+
+.footer > div {
+  display: flex;
+  gap: 10px;
+}
+
+.footer > div > a {
+  padding: 5px;
+  background-color: #fee5b5;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer > div > a:hover {
+  transform: scale(1.2);
+}
+
+.footer > div > a > i {
+  font-size: 30px;
+  color: #131f22;
+}
+
+/* ===========================================
+   HAMBURGER BUTTON (used in updated navbar)
+   =========================================== */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background-color: #24262f;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ================================
+   ENHANCED SKILLS SECTION
+   ================================ */
+
+.skills-section {
+  margin-top: 70px;
+  padding: 40px 30px 50px;
+  background: radial-gradient(circle at top left, #f4e9ff 0, #ffffff 55%);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-section::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background: rgba(110, 6, 242, 0.08);
+  border-radius: 50%;
+  top: -60px;
+  right: -40px;
+  filter: blur(2px);
+}
+
+.skills-section .heading3 {
+  margin-bottom: 25px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.skills > div {
+  flex: 1 1 200px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px 20px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(110, 6, 242, 0.05);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.skills > div::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(110, 6, 242, 0.18), transparent 70%);
+  top: -18px;
+  right: -10px;
+  opacity: 0.7;
+}
+
+.skills > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.07);
+  border-color: rgba(110, 6, 242, 0.35);
+}
+
+.skills > div > h3 {
+  margin-bottom: 10px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 19px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skills > div > h3::before {
+  content: "★";
+  font-size: 14px;
+  color: #6e06f2;
+}
+
+.skills > div > p {
+  margin-bottom: 4px;
+  font-family: var(--secondary-font);
+  color: #697681;
+  font-size: 14px;
+}
+
+/* ================================
+   ENHANCED EXPERIENCE SECTION
+   ================================ */
+
+.experience-section {
+  margin-top: 70px;
+  margin-bottom: 60px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.experience-section .heading3 {
+  margin-bottom: 30px;
+}
+
+/* vertical line */
+.experience-section::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  left: 18px;
+  width: 2px;
+  background: linear-gradient(to bottom, #6e06f2, rgba(110, 6, 242, 0.1));
+}
+
+/* each experience item as a card on the timeline */
+.experience-section > div {
+  position: relative;
+  padding: 16px 20px 14px 26px;
+  margin-bottom: 22px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(110, 6, 242, 0.1);
+}
+
+/* timeline dot */
+.experience-section > div::before {
+  content: "";
+  position: absolute;
+  left: -26px;
+  top: 22px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #6e06f2;
+  border: 3px solid #f6edff;
+  box-shadow: 0 0 0 4px rgba(110, 6, 242, 0.12);
+}
+
+.experience-section > div > h3 {
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #24262f;
+  margin-bottom: 4px;
+}
+
+.experience-section > div > h3 > i {
+  padding-right: 0;
+  color: #6e06f2;
+  font-size: 16px;
+}
+
+.experience-section > div > h3 > span {
+  color: #6e06f2;
+  font-weight: 600;
+}
+
+.experience-section > div > h5 {
+  padding-left: 0;
+  font-size: 13px;
+  font-family: var(--secondary-font);
+  color: #9096a4;
+}
+
+.experience-section > div:last-child {
+  margin-bottom: 0;
+}
+
+/* ===========================================
+   SMOOTH THEME TRANSITION EFFECTS ✨
+   =========================================== */
+
+html,
+body,
+.wrapper,
+.navbar,
+.nav-links a,
+.hero-section,
+.skills-section,
+.skills > div,
+.experience-section > div,
+.project-section > div,
+.wrapper4,
+.footer,
+.footer p,
+.footer h4,
+.btn,
+.scroll-sign > span {
+  transition: background-color 0.35s ease, color 0.35s ease,
+    border-color 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+}
+
+/* Icon animation */
+.theme-toggle i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle.active i {
+  transform: rotate(180deg) scale(1.2);
+}
+
+/* ===========================================
+   RESPONSIVE MEDIA QUERIES
+   =========================================== */
+
+/* Tablets & small laptops */
+@media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .first-hero > h1 {
+    font-size: 72px;
+  }
+
+  .first-hero > p {
+    width: 100%;
+  }
+
+  .project-section {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 20px;
+  }
+
+  .skills {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .experience-section {
+    padding-left: 30px;
+  }
+
+  .experience-section::before {
+    left: 14px;
+  }
+
+  .experience-section > div::before {
+    left: -22px;
+  }
+
+  .wrapper4 {
+    height: auto;
+    padding: 40px 0;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90vw;
+  }
+
+  .navbar {
+    position: relative;
+    gap: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .navbar > a:last-child img {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: none;
+    z-index: 10;
+  }
+
+  .nav-links > a {
+    font-size: 18px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .first-hero > h1 {
+    font-size: 42px;
+  }
+
+  .first-hero > p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .btn2 {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .skills-section {
+    padding: 30px 18px 35px;
+  }
+
+  .skills {
+    align-items: stretch;
+  }
+
+  .experience-section {
+    padding-left: 26px;
+  }
+
+  .experience-section::before {
+    left: 14px;
+  }
+
+  .experience-section > div::before {
+    left: -22px;
+  }
+
+  .heading3 {
+    font-size: 40px;
+  }
+
+  .skill-circle {
+    display: none;
+  }
+
+  .project-section {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .project-section > div {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .wrapper4 {
+    text-align: center;
+  }
+
+  .footer p {
+    width: 100%;
+  }
+
+  .footer > div {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .first-hero > h1 {
+    font-size: 34px;
+  }
+
+  .first-hero > p {
+    font-size: 14px;
+  }
+
+  .hero-section .second-hero img {
+    width: 260px;
+    padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .navbar > a {
+    font-size: 20px;
+  }
+
+  .project-section div img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer h4 {
+    font-size: 36px;
+  }
+  .experience-section > div > h5 {
+    padding-left: 24px;
+  }
+  /* .experience-section > div > h3 {
+    ;
+  } */
+  .scroll-sign > span {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Hamburger animation on mobile */
+@media (max-width: 768px) {
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+}
+
+/* ===========================================
+   NIGHT MODE (DARK THEME)
+   =========================================== */
+
+/* Base body colors */
+body {
+  background-color: #ffffff;
+  color: #111827;
+  font-family: var(--secondary-font);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  border: none;
+  background: #f3f4ff;
+  border-radius: 999px;
+  padding: 6px 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theme-toggle i {
+  font-size: 16px;
+  color: #6e06f2;
+}
+
+.theme-toggle:hover {
+  background: #e3ddff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- DARK MODE OVERRIDES ---------- */
+
+body.dark-mode {
+  background-color: #020617; /* almost black-blue */
+  color: #e5e7eb;
+}
+
+/* Navbar */
+body.dark-mode .navbar > a {
+  color: #e5e7eb;
+}
+
+body.dark-mode .nav-links > a {
+  color: #cbd5f5;
+}
+
+body.dark-mode .nav-links > a:hover {
+  color: #a855f7;
+}
+
+body.dark-mode .navbar > a > img {
+  border: 2px solid #6e06f2;
+}
+
+/* Theme toggle in dark */
+body.dark-mode .theme-toggle {
+  background: #020617;
+  box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.4);
+}
+
+body.dark-mode .theme-toggle i {
+  color: #facc15; /* yellow sun */
+}
+
+/* Hero section */
+body.dark-mode .first-hero > span {
+  color: #9ca3af;
+}
+
+body.dark-mode .first-hero > p {
+  color: #e5e7eb;
+}
+
+/* Skills section */
+body.dark-mode .skills-section {
+  background: radial-gradient(circle at top left, #0b1120 0, #020617 55%);
+}
+
+body.dark-mode .skills > div {
+  background: #020617;
+  border-color: rgba(148, 163, 184, 0.55);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.8);
+}
+
+body.dark-mode .skills > div > h3 {
+  color: #e5e7eb;
+}
+
+body.dark-mode .skills > div > p {
+  color: #cbd5f5;
+}
+
+/* Experience section */
+body.dark-mode .experience-section > div {
+  background: #020617;
+  border-color: rgba(148, 163, 184, 0.55);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.8);
+}
+
+body.dark-mode .experience-section > div > h3 {
+  color: #e5e7eb;
+}
+
+body.dark-mode .experience-section > div > h5 {
+  color: #9ca3af;
+}
+
+body.dark-mode .experience-section::before {
+  background: linear-gradient(to bottom, #a855f7, rgba(110, 6, 242, 0.2));
+}
+
+/* Projects section cards */
+body.dark-mode .project-section > div {
+  background: #020617;
+  border-color: rgba(148, 163, 184, 0.55);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.8);
+}
+
+body.dark-mode .project-section > div > h4 {
+  color: #e5e7eb;
+}
+
+body.dark-mode .project-section > div > p {
+  color: #cbd5f5;
+}
+
+/* Footer */
+body.dark-mode .wrapper4 {
+  background-color: #020617;
+}
+
+body.dark-mode .footer h4 {
+  color: #f9fafb;
+}
+
+body.dark-mode .footer p {
+  color: #9ca3af;
+}
+
+body.dark-mode .footer > div > a {
+  background-color: #facc15;
+}
+
+body.dark-mode .footer > div > a > i {
+  color: #020617;
+}
+
+/* Buttons */
+body.dark-mode .btn {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+body.dark-mode .btn2 {
+  background-color: #e5e7eb;
+  color: #020617;
+}
+
+/* Scroll sign border */
+body.dark-mode .scroll-sign > span {
+  border-color: #a855f7;
+}
+
+/* Dark mode for project images slight dim */
+body.dark-mode .project-section div img {
+  filter: brightness(0.9) contrast(1.05);
+}
