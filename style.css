@@ -520,7 +520,7 @@ a {
 }
 
 .experience-section > div > h5 {
-  padding-left: 0;
+  padding-left: 22px;
   font-size: 13px;
   font-family: var(--secondary-font);
   color: #9096a4;
@@ -730,6 +730,10 @@ body,
 @media (max-width: 480px) {
   .first-hero > h1 {
     font-size: 34px;
+  }
+
+  .experience-section > div > h3 {
+    align-items: normal;
   }
 
   .first-hero > p {
